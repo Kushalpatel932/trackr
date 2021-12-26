@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../Media/lake-pixabay.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    overflow-x: hidden;
+    background-color: #54a0ff;
+
+}
+
+#message{
+    margin-top: 40px;
+    font-size: 60pt;
+    min-height: 2em;
+}
+#message2{
+    min-height: 3em;
+}
+
+#info{
+    margin-top: 50em;
+    border: 1px solid white;
+    background-color: white;
+    opacity: 0.70;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+
+.title{
+    border-bottom: 2px solid #252525;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 1;
+}
+
+#info h2, #info p{
+    opacity: 1;
+    text-align: left;
+    margin-left: 40px;
+    color: black
+}
+
+#info h2{
+    border-bottom: 1px solid black;
+    width: 45%
+    
+}
+
+
+.btn1{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 200px;
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13pt;
+}
+
+.btn2{
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 200px;
+    outline: none;
+    border: none;
+    background-color: #54a0ff;
+    box-shadow: 5px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13pt;
+}
+
+.btn1:hover, .btn2:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 600px){
+    #message{
+        font-size: 20pt;
+    }
+    #message2{
+        font-size: 14pt;
+    }
+    #info h2{
+        border-bottom: 1px solid black;
+        width: 80% !important;
+    }
+
+    .btn1, .btn2{
+        width: 70% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

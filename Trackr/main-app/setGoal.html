@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../CSS/setGoalStyle.css" type="text/css" rel="stylesheet">
+
+    <title>Set a goal - Trackr</title>
+</head>
+<body>
+    
+    <div id="main">
+
+        <h1>Set yourself a new personal goal!</h1>
+        <ul>
+            <li>Make it achievable (Not some unattainable over the top goal</li>
+            <li>Make it simple (One week sober, meditate each day for a week)</li>
+            <li>Make it fun (If possible try to make your goal something fun that you'll enjoy</li>
+        </ul>
+
+        <label>Goal Name:</label>
+        <input type="text" id="nameInput">
+        
+        <label>Goal duration:</label>
+        <select id="daysSelect">
+            <option value="1">One day</option>
+            <option value="2">Two days</option>
+            <option value="3">Three days</option>
+            <option value="7">Seven days (one week)</option>
+            <option value="14">Fourteen days (two weeks)</option>
+            <option value="30">Thirty days (one month)</option>
+        </select>
+
+        <button onclick="GoalData()" class="save">Set goal!</button>
+
+    </div>
+    
+    <button class="back" onclick="window.location.replace('app.html')" id="finish"><i class="fas fa-arrow-left fa-4x"></i></button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://kit.fontawesome.com/42575f5eb5.js" crossorigin="anonymous"></script>
+
+    <script src="../Javascript/setGoalScript.js"></script>
+</body>
+</html>

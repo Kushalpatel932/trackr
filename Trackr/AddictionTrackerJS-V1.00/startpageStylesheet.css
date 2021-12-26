@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+.container{
+
+    width: 50%;
+    height: 50vh;
+    background-color:grey;
+    margin: auto auto;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-family: 'Kumbh Sans', sans-serif;
+    border-radius: 10px;
+
+    animation-name: Bubble;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+
+
+@keyframes Bubble{
+
+    from{transform: scale(1.0);}
+    to{transform: scale(1.02);}
+
+}
+
+
+
+
+input{
+
+    display: block;
+    padding: 10px;
+    border: 0;
+    width: 30em;
+    border-radius: 5px;
+    border: 2px solid #fff;
+
+
+}
+
+button{
+
+    text-align: center;
+    width: 29em;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+@media(max-width: 880px){
+
+    .container{
+
+        width: 95%;
+
+    }
+
+    input{
+
+        width: 90%;
+
+    }
+
+    button{
+
+        width: 100%;
+
+    }
+}
+
+.warn{
+
+    border: 2px solid red;
+
+}
+.yes{
+
+    border: 2px solid green;
+
+}
+
+body{
+    background-color: #0abde3;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+}
+
+footer{
+
+    text-align: center;
+    border-top: 1.2px solid black;
+    background-color: #50565e;
+    font-family: 'Lato', Helvetica, sans-serif;
+
+}
+
+a{
+
+    color: white;
+
+}

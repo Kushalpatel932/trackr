@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+.back {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    animation-name: Bubble;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(243, 243, 243);
+}
+
+@keyframes Bubble {
+
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
+
+#main {
+    border: 1px solid white;
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    padding-bottom: 35px;
+    margin-top: 20em;
+    text-align: center;
+}
+
+li{
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+body{
+    background-color: #54a0ff;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+label, select{
+
+    padding: 8px;
+    font-size: 12pt;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+label{
+font-size: 14pt;
+font-weight: bold;
+}
+
+input{
+    margin-top: 40px;
+    padding: 8px;
+    font-size: 12pt;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    margin-right: 25px;
+}
+
+.save{
+
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 30%;
+    margin: 20px;
+    background-color: #dedede;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+@media(max-width: 500px){
+    label,select, input{
+        width: 80%;
+    }
+
+    .save{
+        width: 70%;
+    }
+}

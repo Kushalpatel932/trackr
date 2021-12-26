@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    height: 100vh;
+
+    background-color: #54a0ff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cutout {
+    background-color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+    opacity: 1;
+    box-shadow: 5px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.two{
+    height: 20em;
+}
+
+.deleteBtn {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: rgb(255, 59, 59);
+    padding: 8px;
+    background-color: #dedede;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    outline: none;
+    font-weight: bold;
+    border: none;
+}
+
+.deleteBtn:hover {
+    color: red;
+    background-color: black;
+}
+
+#clock {
+    border: 2px solid rgb(187, 187, 187);
+    width: 40%;
+    font-size: 40pt;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: rgb(17, 17, 17);
+}
+
+#goal {
+    background-color: #45c8fc;
+    color: white !important;
+    box-shadow: none;
+}
+
+#fixedBtn1,
+#fixedBtn2,
+#fixedBtn3 {
+    position: fixed;
+    padding: 8px;
+    width: 15%;
+    left: 15px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: #dedede;
+    font-weight: bold;
+}
+
+#fixedBtn1 {
+    bottom: 20px;
+
+}
+
+#fixedBtn1:hover {
+    color: orange;
+    background-color: black;
+}
+
+#fixedBtn2 {
+    bottom: 70px;
+}
+
+#fixedBtn2:hover {
+    color: orange;
+    background-color: black;
+}
+
+#fixedBtn3 {
+    bottom: 120px;
+    color: crimson;
+}
+
+#fixedBtn3:hover {
+    background-color: black;
+}
+
+.col-2{
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    
+}
+
+
+
+@media(max-width: 700px) {
+    #clock {
+        width: 80%;
+    }
+
+    #fixedBtn1,
+    #fixedBtn2,
+    #fixedBtn3 {
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

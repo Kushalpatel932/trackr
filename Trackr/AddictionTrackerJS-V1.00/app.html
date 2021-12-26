@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="mainappStylesheet.css" rel="stylesheet" type="text/css">
+
+        <link href="Simplegrid.io/simple-grid.css" rel="stylesheet" type="text/css">
+
+    <title>Addiction Tracker V1.00 </title>
+</head>
+<body onload="CheckForSavedData()">
+
+    <div class="row">
+
+
+        <div class="col-3 col-3-sm sideBar">
+
+            <h1 id="GreetingOne">Hello there!</h1>
+            <h3 id="GreetingTwo">If your seeing this message you must enable Javascript...</h3>
+
+            
+            <div class="fromTop">
+                <p>> <a href="https://www.nhs.uk/live-well/quit-smoking/" target="blank">Advice for quitting smoking</a></p>
+                <p>> <a href="https://www.nhs.uk/live-well/alcohol-support/" target="blank">Advice for alcohol releated problems</a></p>
+                <p>> <a href="https://www.nhs.uk/live-well/healthy-body/drug-addiction-getting-help/" target="blank">Advice for drug releated problems</a></p>
+            </div>
+            
+
+        </div>
+
+        <div class="col-9 col-9-sm">
+
+          <div class="fullBAR center">
+
+            <h2 id="motivation">---</h2>
+
+          </div>
+
+          <div class="fullBAR center">
+
+            <div class="half left">
+
+                <h3 id="last" class="center">--LAST RELAPSE--</h3>
+
+            </div>
+
+            <div class="half right">
+
+                <h1 id="clock" class="center">--TIME--</h1>
+                
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-9 col-9-sm">
+
+            <div class="fullBAR center" id="relapseDisplay">
+
+            
+
+            </div>
+
+        </div>
+         
+
+       
+
+    </div>
+
+    <button id="emergency" onclick="RedirectUserEMERGENCY()">⚡PANIC BUTTON!⚡</button>
+    <button id="delete">⛔️  DELETE ALL DATA ⛔️</button>
+    <button id="relapse">LOG A RELAPSE 🕐</button>
+
+    <script src="Javascript/app.js"></script>
+</body>
+</html>

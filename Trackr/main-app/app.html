@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/simple-grid.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/appStyle.css" rel="stylesheet" type="text/css">
+
+
+    <title>Trackr V1.01 </title>
+</head>
+
+<body onload="CheckForSavedData()">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-12-sm cutout">
+                <h1 id="GreetingOne">Welcome</h1>
+                <h1 id="GreetingTwo">[ERROR, PLEASE ENABLE JAVASCRIPT]</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7 col-12-sm cutout two">
+                <h2>All you have to do is stay present in the moment and don't relapse now</h2>
+                <h1 id="clock">--:--:-- AM/PM</h1>
+            </div>
+
+
+            <div class="col-5 col-12-sm cutout two">
+                <h1 style="font-size: 30pt;">Days since your last relapse:</h1>
+                <h1 id="daysSince" style="font-size: 50pt;"></h1>
+            </div>
+
+            <div class="col-6 col-12-sm cutout">
+                <h1>When your most vulnerable:</h1>
+                <canvas id="chart1" width="400" height="400" class="chart"></canvas>
+            </div>
+
+            <div class="col-6 col-12-sm cutout">
+                <h1>Your most recent relapses:</h1>
+                <div class="" id="relapseDisplay"></div>
+            </div>
+
+
+
+            <div class="col-6 col-12-sm cutout" id="goal">
+                <h2>Current goal:</h2>
+                <h1 id="goalDisplay">No goal - <a href="setGoal.html">Set a goal</a></h1>
+                <h1 id="goalDuration"></h1>
+
+                <button class="deleteBtn" onclick="localStorage.removeItem('currentGoal'); window.location.reload()"
+                    id="delGoalBtn">DELETE GOAL</button>
+            </div>
+
+            <div class="col-7 col-12-sm cutout">
+                <h1>Your moods when you relapsed: </h1>
+                <h2 id="infoMsg">Sorry, not enough data to display, this section will update the more relapses you log!
+                    <span class="heart">❤</span></h2>
+                <canvas id="chart2" width="100px" height="100px" class="chart"></canvas>
+            </div>
+
+            <div class="col-5 col-12-sm cutout"></div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <style>
+        .heart {
+            color: #e25555;
+        }
+    </style>
+
+    <button id="fixedBtn2" onclick="Relapse();">Log a relapse</button>
+    <button id="fixedBtn1" onclick="DeleteData()">Delete data</button>
+    <button id="fixedBtn3">PANIC BUTTON</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://kit.fontawesome.com/42575f5eb5.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+    <script src="../Javascript/mainAppScript.js"></script>
+</body>
+
+</html>

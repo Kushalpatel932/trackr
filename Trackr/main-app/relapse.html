@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/simple-grid.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/relapseStyle.css" rel="stylesheet" type="text/css">
+
+
+    <title>Trackr V1.01</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="cutout">
+                <h1>Don't let this get you down!</h1>
+                <h3>Keep moving forward..</h3>
+
+
+                <h2 id="question">How are you feeling?</h2>
+                <div class="customRow">
+                    <div class="col5 one"><i class="fas fa-grin-alt fa-2x"></i><h5>Brilliant</h5></div>
+                    <div class="col5 two"><i class="fas fa-smile-beam fa-2x"></i><h5></h5></div>
+                    <div class="col5 three"><i class="fas fa-meh fa-2x"></i><h5></h5></div>
+                    <div class="col5 four"><i class="fas fa-frown fa-2x"></i><h5></h5></div>
+                    <div class="col5 five"><i class="fas fa-frown-open fa-2x"></i><h5>Despairing</h5></div>
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="5" value="3" class="slider" id="slider">
+                  </div>
+            </div>
+            <div class="secondCutout" id="help">
+                <h1><a href="https://www.samaritans.org/how-we-can-help/if-youre-having-difficult-time/signs-you-may-be-struggling-cope/practical-ways-help-yourself-cope/" target="new">Click here for help with low mood/depression</a></h1>
+            </div>
+        </div>
+    </div>
+
+    <button class="back" onclick="SaveData(); SaveTime(); window.location.replace('app.html')" id="back"><i class="fas fa-arrow-left fa-4x back"></i></button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://kit.fontawesome.com/42575f5eb5.js" crossorigin="anonymous"></script>
+
+    <script src="../Javascript/relapsePageScript.js"></script>
+</body>
+
+</html>
